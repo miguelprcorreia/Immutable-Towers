@@ -1,43 +1,74 @@
-# Laboratórios de Informática I
+<div align="center">
 
-## Executável
+# 🏰 Immutable Towers
 
-Pode compilar e executar o programa através dos comandos `build` e `run` do Cabal.
+**Tower Defense game built in Haskell** — project for *Laboratórios de Informática I* @ University of Minho
+
+![Haskell](https://img.shields.io/badge/-Haskell-5D4F85?style=for-the-badge&logo=haskell&logoColor=white)
+![Cabal](https://img.shields.io/badge/-Cabal-6E4A7E?style=for-the-badge&logo=haskell&logoColor=white)
+![HUnit](https://img.shields.io/badge/-HUnit-orange?style=for-the-badge)
+
+</div>
+
+---
+
+## 🚀 Getting Started
+
+### Build & Run
+
+Compile and run the project using Cabal:
 
 ```bash
 cabal run --verbose=0
 ```
 
-## Interpretador
+### Interpreter
 
-Para abrir o interpretador do Haskell (GHCi) com o projeto carregado, utilize o comando `repl` do Cabal
+Open the Haskell interpreter (GHCi) with the project loaded:
 
 ```bash
 cabal repl
 ```
 
-## Testes
+---
 
-O projecto utiliza a biblioteca [HUnit](https://hackage.haskell.org/package/HUnit) para fazer testes unitários.
+## 🧪 Testing
 
-Execute os testes com o comando `test` do Cabal e utilize a flag `--enable-coverage` para gerar um relatório de cobertura de testes.
+The project uses [HUnit](https://hackage.haskell.org/package/HUnit) for unit testing.
+
+Run the test suite:
+
+```bash
+cabal test
+```
+
+Generate a test coverage report:
 
 ```bash
 cabal test --enable-coverage
 ```
 
-Execute os exemplos da documentação como testes com a biblioteca
-[`doctest`](https://hackage.haskell.org/package/doctest). Para instalar o
-executavel utilize o comando `cabal install doctest`.
+Documentation examples can also be run as tests via [`doctest`](https://hackage.haskell.org/package/doctest):
 
 ```bash
+cabal install doctest
 cabal repl --build-depends=QuickCheck,doctest --with-ghc=doctest --verbose=0
 ```
 
-## Documentação
+---
 
-A documentação do projeto pode ser gerada recorrendo ao [Haddock](https://haskell-haddock.readthedocs.io/).
+## 📚 Documentation
+
+Project documentation is generated with [Haddock](https://haskell-haddock.readthedocs.io/):
 
 ```bash
 cabal haddock
 ```
+
+---
+
+<div align="center">
+
+🔗 [github.com/miguelprcorreia/Immutable-Towers](https://github.com/miguelprcorreia/Immutable-Towers)
+
+</div>
