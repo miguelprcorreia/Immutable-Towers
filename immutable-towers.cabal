@@ -52,7 +52,7 @@ library
 
     -- Other library packages from which modules are imported.
     build-depends:
-        base ^>=4.17.2.1,
+        base >=4.17.2.1 && <4.21,
         random ^>=1.2.1.1
 
     hs-source-dirs:   lib
@@ -74,7 +74,7 @@ executable immutable-towers
     main-is:          Main.hs
 
     build-depends:
-        base ^>=4.17.2.1,
+        base >=4.17.2.1 && <4.21,
         gloss ^>=1.13.2.1,
         immutable-towers
 
@@ -101,7 +101,7 @@ test-suite immutable-towers-test
 
     -- Test dependencies.
     build-depends:
-        base ^>=4.17.2.1,
+        base >=4.17.2.1 && <4.21,
         HUnit ^>=1.6.2.0,
         gloss ^>=1.13.2.1,
         immutable-towers
@@ -109,3 +109,4 @@ test-suite immutable-towers-test
     hs-source-dirs:   test
 
     default-language: GHC2021
+    
